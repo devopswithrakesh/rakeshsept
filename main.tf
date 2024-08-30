@@ -39,7 +39,7 @@ resource "aws_route_table" "rakesh-rt" {
 resource "aws_route_table_association" "rakesh-rta"{
   subnet_id= "aws_subnet.rakesh-subnet.id"
   route_table_id ="aws_route_table.rakesh-rt.id"
-  }
+}
   
   resource "aws_security_group" "rakesh-sg"{
   vpc_id ="aws_vpc.rakesh-vpc.id"
