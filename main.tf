@@ -36,8 +36,7 @@ resource "aws_route_table" "rakesh-rt" {
         gateway_id ="aws_internet_gateway.rakesh-ig.id"
     }
 }
-resource "aws_route_table_association" "rakesh-rta"
-  {
+resource "aws_route_table_association" "rakesh-rta"{
   subnet_id= "aws_subnet.rakesh-subnet.id"
   route_table_id ="aws_route_table.rakesh-rt.id"
   }
